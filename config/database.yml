@@ -10,16 +10,21 @@
 #   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
 #
 default: &default
-  adapter: mysql2
-  encoding: utf8
-  pool: 5
+  database: receta_development
   username: root
-  password:
-  socket: /var/run/mysqld/mysqld.sock
+  password: lyliann
+  host: localhost
+  adapter: mysql2
+  pool: 5
 
 development:
   <<: *default
   database: receta_development
+  username: root
+  password: lyliann
+  host: localhost
+  adapter: mysql2
+  pool: 5
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
