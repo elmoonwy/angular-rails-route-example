@@ -55,3 +55,5 @@ group :production, :staging do
 end
 
 gem 'bower-rails'
+
+gem 'angular-rails-templates'
